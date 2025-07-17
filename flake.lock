@@ -1,0 +1,55 @@
+{
+  "nodes": {
+    "barracks": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1752729773,
+        "narHash": "sha256-gfHkMoYf+/yj1meNqUaSQiOm8GqutbfflSFbBsruN74=",
+        "path": "/Users/mukeshkannan/mk/dev/barracks",
+        "type": "path"
+      },
+      "original": {
+        "path": "/Users/mukeshkannan/mk/dev/barracks",
+        "type": "path"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1752683762,
+        "narHash": "sha256-CVC4bpthYhKk4Qb4mt00SqfJ7CJ4vfTX06pLN2OHa1c=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "fa64ec5c1ca6f17746f3defedb988b9248e97616",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1752683762,
+        "narHash": "sha256-CVC4bpthYhKk4Qb4mt00SqfJ7CJ4vfTX06pLN2OHa1c=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "fa64ec5c1ca6f17746f3defedb988b9248e97616",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "barracks": "barracks",
+        "nixpkgs": "nixpkgs_2"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
