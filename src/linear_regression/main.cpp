@@ -21,8 +21,9 @@ int main(int, char **) {
 
   main_renderer.add_pipeline([&] {
     epoch_number++;
+    double error = 0;
     if (epoch_number < 100000) {
-        double error = 0;
+        error = 0;
         for (int i = 0; i < ages.size(); ++i) error += pow((hypothesis(ages[i]) - prices[i]), 2);
         error /= 2 * ages.size();
 
@@ -44,6 +45,16 @@ int main(int, char **) {
     double x[] = {0, -(O2 / O1)};
     double y[] = {O2, 0};
 
+
+    ImGui::Begin("Metrics");
+
+    ImGui::Text("FPS: %.1f", ImGui::GetIO().Framerate);
+    ImGui::Text("EPOCH: %d", epoch_number);
+    ImGui::Text("ERROR: %.1f", error);
+    ImGui::Text("WEIGH: %.1f", O1);
+    ImGui::Text("BIAS : %.1f", O2);
+
+    ImGui::End();
 
     if (ImGui::Begin("DATA PLOT")) {
       if (ImPlot::BeginPlot("My Plot", ImVec2(600, 400))) {
