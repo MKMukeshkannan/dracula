@@ -5,13 +5,13 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1752729773,
+        "lastModified": 1753032540,
         "narHash": "sha256-gfHkMoYf+/yj1meNqUaSQiOm8GqutbfflSFbBsruN74=",
-        "path": "/Users/mukeshkannan/mk/dev/barracks",
+        "path": "/Users/mukeshkannan/mk/dev/MAINSTREAM/barracks",
         "type": "path"
       },
       "original": {
-        "path": "/Users/mukeshkannan/mk/dev/barracks",
+        "path": "/Users/mukeshkannan/mk/dev/MAINSTREAM/barracks",
         "type": "path"
       }
     },

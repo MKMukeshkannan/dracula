@@ -1,6 +1,6 @@
 {
   description = "A Nix-flake-based C/C++ development environment";
-  inputs.barracks.url = "path:/Users/mukeshkannan/mk/dev/barracks";
+  inputs.barracks.url = "path:/Users/mukeshkannan/mk/dev/MAINSTREAM/barracks";
 
   outputs = { nixpkgs, barracks, ... }:
     let
