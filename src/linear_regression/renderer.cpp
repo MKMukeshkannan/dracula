@@ -20,7 +20,7 @@ Renderer::Renderer() {
   glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
   glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); 
 
-  this->main_window = glfwCreateWindow(1280, 720, "C++ MACHINE LEARNING", nullptr, nullptr);
+  this->main_window = glfwCreateWindow(1280, 720, "dracula", nullptr, nullptr);
   if (this->main_window == nullptr) return ;
   glfwMakeContextCurrent(this->main_window);
   glfwSwapInterval(1);
